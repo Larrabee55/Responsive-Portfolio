@@ -3,7 +3,7 @@ body {
   background-image: url(../Images/dark-paths.png);
   background-position: center;
   background-repeat: repeat;
-  
+
   position: relative;
   margin: auto;
 }
@@ -11,7 +11,10 @@ body {
 header {
   background-color: grey;
   margin-bottom: 40px;
+  width: 100%;
+  clear: both;
 }
+
 ul {
   list-style-type: none;
   margin: 0px;
@@ -20,11 +23,11 @@ ul {
   width: 960px;
   margin: auto;
 }
-  
+
 li {
   float: right;
 }
-  
+
 li a {
   display: block;
   color: white;
@@ -71,6 +74,7 @@ li a {
   background-color: grey;
   border-top: 8px solid #4aaaa5;
 }
+
 /* About */
 .about-p {
   line-height: 35px;
@@ -79,6 +83,7 @@ li a {
   margin-right: 30px;
   margin-top: 30px;
 }
+
 .about-img {
   float: left;
   height: 150px;
@@ -101,17 +106,20 @@ textarea {
   font-size: 16px;
   resize: none;
 }
+
 form {
   margin-left: 30px;
   margin-right: 30px;
   padding-bottom: 40px;
 }
+
 input[type=text] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
 }
+
 input[type=submit] {
   background-color: teal;
   color: white;
@@ -122,6 +130,7 @@ input[type=submit] {
   cursor: pointer;
   float: left;
 }
+
 /* Portfolio */
 
 .portfolio-container {
@@ -130,6 +139,7 @@ input[type=submit] {
   width: 200px;
   height: 200px;
 }
+
 .text-block {
   position: absolute;
   bottom: 0;
@@ -139,6 +149,7 @@ input[type=submit] {
   width: 100%;
   text-align: center;
 }
+
 .portfolio-img {
   width: 200px;
   height: 200px;
@@ -146,6 +157,50 @@ input[type=submit] {
   padding-left: 30px;
   padding-top: 20px;
 }
-#portfolio-p {
 
+#portfolio-p {}
+
+@media screen and (max-width: 980px) {
+  #content {
+    float: left;
+    margin-left: 50px;
+    width: 60%;
+
+  }
+
+  ul {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #content {
+    float: left;
+    margin-left: 20px;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  header {
+    position: static;
+  }
+
+  #content {
+    clear: both;
+    float: left;
+    margin: 20px;
+    width: 95%;
+  }
+
+  #name {
+    float: none;
+    text-align: center;
+    padding: 10px;
+  }
+
+  li {
+    float: none;
+    padding-bottom: 20px;
+  }
 }
